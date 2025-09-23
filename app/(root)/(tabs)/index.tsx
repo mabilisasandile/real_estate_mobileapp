@@ -49,7 +49,7 @@ const Home = () => {
     refetch({
       filter: params.filter!,
       query: params.query!,
-      limit: 6,
+      limit: 20,
     });
   }, [params.filter, params.query]);
 
@@ -85,7 +85,7 @@ const Home = () => {
 
                 <View className="flex flex-col items-start ml-2 justify-center">
                   <Text className="text-xs font-rubik text-black-100">
-                    Good Morning
+                    Hello
                   </Text>
                   <Text className="text-base font-rubik-medium text-black-300">
                     {user?.name}
